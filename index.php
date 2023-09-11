@@ -16,6 +16,10 @@ include('auth.php');
             <li class="brand"><img src="music.jpg">Music</li>
             <li>Home</li>
             <li>About</li>
+            <li><?=$_SESSION['auth_user']['user_name']?></li>
+            <form action="allcode.php" method="post">
+                <button type="submit" name="logout_btn">Logout</button>
+            </form>
         </ul>
     </nav>
 
