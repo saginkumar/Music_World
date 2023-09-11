@@ -33,6 +33,9 @@ include('includes/header.php');
                             </div>
                         </form>
                     </div>
+                    <div class="card-footer">
+                        <p class="text-center">Don't have an account? <a href="register.php">Register</a></p>
+                    </div>
                 </div>
             </div>
         </div>

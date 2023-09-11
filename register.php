@@ -38,10 +38,13 @@ include('includes/header.php');
                                 <label for="password">Confirm Password</label>
                                 <input required type="password" placeholder="Enter Confirm Password" class = "form-control" name="cpassword">
                             </div>
-                            <div class="form-group mb-3 text-center">
+                            <div class="form-group text-center">
                                 <button class="btn btn-primary" name = "register_btn" type="submit">Register</button>
                             </div>
                         </form>
+                    </div>
+                    <div class="card-footer">
+                        <p class="text-center">Already have an account? <a href="login.php">Login</a></p>
                     </div>
                 </div>
             </div>
