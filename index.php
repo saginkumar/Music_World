@@ -1,3 +1,6 @@
+<?php 
+include('auth.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,15 +13,19 @@
 <body>
     <nav>
         <ul>
-            <li class="brand"><img src="music.jpg">Music</li>
+            <li class="brand"><img src="music.jpg">8D Music World</li>
             <li>Home</li>
             <li>About</li>
+            <li><?=$_SESSION['auth_user']['user_name']?></li>
+            <form action="allcode.php" method="post">
+                <button type="submit" name="logout_btn">Logout</button>
+            </form>
         </ul>
     </nav>
 
     <div class="container">
         <div class="songList">
-            <h1>Justin Bieber Play List</h1>
+            <h1>Justin Bieber 8D Collections</h1>
             <div class="songItemContainer">
                 <div class="songItem">
                     <img alt="1">
